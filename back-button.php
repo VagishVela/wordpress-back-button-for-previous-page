@@ -20,8 +20,8 @@
  * GitHub Plugin URI: https://github.com/VagishVela/
  */
 
-add_filter('genesis_before_content', 'dj_back_button');
-function dj_back_button() {
+add_filter('wp_footer', 'back_button_prev_page');
+function back_button_prev_page() {
 	if (empty($_SERVER['HTTP_REFERER'])) {
 		return;
 	} else {
