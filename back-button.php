@@ -31,13 +31,7 @@ function back_button_prev_page() {
 	if ( is_front_page() ) {
 		return;
 	} else if (isset($backbuttonurl)) {
-  		echo "<div class=\"back-button\"> <p class=\"back-button-txt\"><a href='$backbuttonurl' onclick=\"if (document.referrer.indexOf(window.location.host) !== -1) { history.go(-1); return false; } else { window.location.href = 'www.discerningjourneys.com'; }\">&#171;</a></p></div>";
-	}
-
-	if (is_woocommerce()) {
-		  		echo "<div class=\"back-button\"> <p class=\"back-button-txt\"><a href='$backbuttonurl' onclick=\"if (document.referrer.indexOf(window.location.host) !== -1) { history.go(-1); return false; } else { window.location.href = 'www.discerningjourneys.com'; }\">&#171;</a></p></div>";
-	} else {
-		return;
+  		echo "<div class=\"back-button\"> <p class=\"back-button-txt\"><a href='$backbuttonurl' onclick=\"if (document.referrer.indexOf(window.location.host) !== -1) { history.go(-1); return false; } else { window.location.href = ' . get_site_url(); . '; }\">&#171;</a></p></div>";
 	}
 
 };
