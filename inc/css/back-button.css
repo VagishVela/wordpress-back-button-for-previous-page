@@ -1,0 +1,19 @@
+﻿
+
+back-button-txt {
+    font-size: 100px;
+    margin-top: -63px;
+}
+
+.back-button {
+    background: none repeat scroll 0 0 #666666;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    color: #FFFFFF;
+    height: 50px;
+    left: 0;
+    position: fixed;
+    top: 150px;
+    width: 50px;
+    z-index: 1000;
+}
